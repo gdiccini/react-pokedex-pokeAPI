@@ -8,11 +8,13 @@ export default function MainPage() {
   return (
     <div>
       <h1>Main Page</h1>
-      {
-        pokemons.map((pokemon) => (
-          <PokemonCard key={ pokemon.id } pokemon={ pokemon } />
-        ))
-      }
+      <section className="cards-container">
+        {
+          pokemons.map((pokemon) => (
+            <PokemonCard key={ pokemon.id } pokemon={ pokemon } />
+          ))
+        }
+      </section>
     </div>
   );
 }
