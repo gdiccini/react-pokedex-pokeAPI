@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import MainPage from './pages/MainPage';
+// import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Minha pokedex</h1>
+      <MainPage />
     </div>
   );
 }
