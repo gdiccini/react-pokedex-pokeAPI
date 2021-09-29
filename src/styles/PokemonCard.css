@@ -1,19 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .pokemon-card {
-  border-radius: 10px;
+  border-radius: 4px;
   margin-bottom: 25px;
   width: 205.17px;
 }
 
-.pokemon-card  figure{
-  background-color: #F2F2F2;
-  border-radius: 10px;
+.pokemon-card  figure {
+  background-color: #e6e6e6;
+  border-radius: 4px;
   width: 100%;
+}
+
+.pokemon-card figure:hover {
+  /* background-color: #f9fac8; */
+  background-color: #959a9c;
+  transition: 0.6s;
 }
 
 .pokemon-image {
@@ -38,6 +38,7 @@
 .pokemon-types {
   display: flex;
   margin-top: 7px;
+  text-transform: capitalize;
 }
 
 .type-content {
@@ -124,4 +125,8 @@
 
 .dragon {
   background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+
+.dark {
+  background: #707070;
 }

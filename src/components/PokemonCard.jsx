@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/PokemonCard.css';
 
 export default function PokemonCard({ pokemon }) {
@@ -25,9 +26,11 @@ export default function PokemonCard({ pokemon }) {
 
   return (
     <div className="pokemon-card">
-      <figure>
-        <img className="pokemon-image" src={ front_default } alt={ `${name}` } />
-      </figure>
+      <Link to={ `/pokedex/${id}` }>
+        <figure>
+          <img className="pokemon-image" src={ front_default } alt={ `${name}` } />
+        </figure>
+      </Link>
       <div className="pokemon-info">
         <p className="pokemon-number">{generateIdNumber(id)}</p>
         <p className="pokemon-name">{nameCapitalized}</p>

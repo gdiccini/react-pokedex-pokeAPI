@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #474747;
+}
+
+.cards-container {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px 60px;
+  width: 74%;
+}

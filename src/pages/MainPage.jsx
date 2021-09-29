@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Context } from '../provider/Provider';
 import PokemonCard from '../components/PokemonCard';
+import '../styles/MainPage.css';
 
 export default function MainPage() {
   const { pokemons } = useContext(Context);
-  // console.log(pokemons);
   return (
     <div>
       <h1>Main Page</h1>
